@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: consolas;
+        }
+        div {
+            width: 150px;
+            height: 150px;
+            background: green;
+            border: 3px solid red;
+            margin: 15px 5px;
+            float: left;
+        }
+        span {
+            color: orange;
+            font-weight: bold;
+        }
+        .blue {
+            color: blue;
+        }
+        .hidden {
+            overflow: hidden;
+        }
+        .scroll-y {
+            overflow-y: scroll;
+        }
+        .wrap {
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow</h1>
+    <div><span>overflow: visible; (default)</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio maxime est cum iure modi unde ullam soluta eaque dicta, vitae inventore illum at vero repudiandae voluptatibus suscipit eos odio.</div>
+    <div class="hidden"><span>overflow: hidden;</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio maxime est cum iure modi unde ullam soluta eaque dicta, vitae inventore illum at vero repudiandae voluptatibus suscipit eos odio.</div>
+    <div class="scroll-y"><span>overflow: scroll-y;</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio maxime est cum iure modi unde ullam soluta eaque dicta, vitae inventore illum at vero repudiandae voluptatibus suscipit eos odio.</div>
+    <div class="wrap scroll-y"><span>overflow-wrap: break-word;</span> <br> Lorem ipsum dolor sit amet <span class="blue">this-is-very-long-word</span> adipisicing elit. Reiciendis optio maxime est cum iure modi unde ullam soluta eaque dicta, vitae inventore illum at vero repudiandae voluptatibus suscipit eos odio.</div>
+</body>
+</html>
